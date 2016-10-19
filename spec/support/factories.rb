@@ -29,7 +29,4 @@ FactoryGirl.define do
     end
   end
 
-  # sequence :song_name, ["D", "E", "F"].cycle do |n|
-  #   "Song #{n}"
-  # end
 end
