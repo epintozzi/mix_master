@@ -1,8 +1,11 @@
 <h1><%= @artist.name %></h1>
 
 <p>
-<%= image_tag @artist.image_path %>
+<%= image_tag(@artist.image_path, alt: "Photo of #{@artist.name}") %>
 </p>
 
-<%= link_to "Edit", edit_artist_path %>
-<%= link_to "Delete", artist_path(@artist), method: :delete %>
+<ul>
+<li><%= link_to "Edit", edit_artist_path %></li>
+<li><%= link_to "Delete", artist_path(@artist), method: :delete %></li>
+<li><%= link_to "New song", new_artist_song_path(@artist) %>
+</ul>
